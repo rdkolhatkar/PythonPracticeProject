@@ -1,0 +1,1 @@
+Run the python program written in the "main.py" file in VS code
