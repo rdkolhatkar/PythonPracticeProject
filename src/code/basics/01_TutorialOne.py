@@ -1,5 +1,5 @@
 # This is a Python script that prints messages to the console.
-# To run the "TutorialOne.py"file use command :  python src/code/basics/TutorialOne.py
+# To run the "TutorialOne.py"file use command :  python src/code/basics/01_TutorialOne.py
 print("Hello World!")
 print("This is the main module of the code.")
 print("How are you doing today?")
@@ -28,6 +28,7 @@ print(f"User Name: {user_name}, User Age: {user_age}, User Height: {user_height}
 # This script demonstrates basic variable usage and printing in Python.
 # It also includes comments explaining the rules for defining variables.
 # Identify the variable types and print their values.
+# type() function is used to check the type of a variable.
 print(type(age))  # <class 'int'>
 print(type(name))  # <class 'str'>
 print(type(height))  # <class 'float'>
