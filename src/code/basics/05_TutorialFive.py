@@ -11,7 +11,7 @@
 # / -> Division
 # % -> Modulus (Remainder)
 # ** -> Exponentiation (Power)
-# // -> Floor Division (Quotient)
+# // -> Floor Division (Quotient)ø
 a = 10
 b = 3
 print("Arithmetic Operators:")
@@ -22,6 +22,18 @@ print("Division:", a / b)
 print("Modulus:", a % b)
 print("Exponentiation:", a ** b)
 print("Floor Division:", a // b)
+# Example of Arithmetic Operators
+a = 34
+b = 2 
+# Arithmetic Operator 
+print("a + b = ", a + b)
+print("a - b = ", a - b)
+print("a * b = ", a * b)
+print("a / b = ", a / b)
+print("a % b = ", a % b)
+print("a // b = ", a // b)
+print("a ** b = ", a ** b)
+ 
 # Assignment Operators
 # Assignment operators are used to assign values to variables
 # = -> Assigns the value on the right to the variable on the left
@@ -48,7 +60,13 @@ print("After %= 3, a =", a)
 a **= 2
 print("After **= 2, a =", a)
 a //= 3
-print("After //= 3, a =", a)    
+print("After //= 3, a =", a)
+# Example of Assignment Operators
+a = 32
+print(a)
+a*=3
+print(a)
+    
 # Comparison Operators
 # Comparison operators are used to compare two values and return a boolean result (True or False)
 # == -> Equal to        
@@ -58,6 +76,7 @@ print("After //= 3, a =", a)
 # >= -> Greater than or equal to
 # <= -> Less than or equal to
 print("\nComparison Operators:")
+# Example of Comparison Operators
 x = 5   
 y = 10
 print("x == y:", x == y)
@@ -66,6 +85,17 @@ print("x > y:", x > y)
 print("x < y:", x < y)
 print("x >= y:", x >= y)
 print("x <= y:", x <= y)
+# Conditional Operators 
+a = 34
+b = 2
+print(a>4)
+print(a<4)
+print(a<=4)
+print(a>=4)
+print(a==4) # Is a equal to 4?
+print(a==34) # Is a equal to 34?
+print(a!=34) # Is a not equal to 34?
+
 # Logical Operators
 # Logical operators are used to combine conditional statements
 # and return a boolean result (True or False)
@@ -78,6 +108,25 @@ b = False
 print("a and b:", a and b)  # Returns False
 print("a or b:", a or b)
 print("not a:", not a)  # Returns False
+# Example of Logical Operators
+c = True 
+d = False
+
+print(True and True)
+print(True and False)
+print(False and True)
+print(False and False)
+
+print("For Or Operator...")
+print(True or True)
+print(True or False)
+print(False or True)
+print(False or False)
+
+print("Not Operator")
+print(not(True) ) 
+print(not(False) ) 
+
 # Identity Operators
 # Identity operators are used to compare the memory locations of two objects
 # is -> Returns True if both variables point to the same object     
