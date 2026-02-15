@@ -21,9 +21,9 @@ print("Sliced String (-6 to end):", sample_string[-6:])
 print("Sliced String (0 to -7):", sample_string[0:-7]) # same as sample_string[0:len(sample_string)-7] i.e 0 to 6
 print("Sliced String (2 to -1):", sample_string[2:-1])  
 value = "Alice1234567890"
-print(value[0:5:2]) 
-print(value[::2]) 
-print(value[0:10:3]) 
+print(value[0:5:2]) # Skip 2-1 ie 1 character, output: Aic
+print(value[::2]) # Skip 2-1 ie 1 character from the whole string, output: Ace13579
+print(value[0:10:3]) # Skip 3-1 ie 2 characters from index 0 to 10, output: A1
 # String methods
 print("Uppercase:", sample_string.upper())  # Convert to uppercase
 print("Lowercase:", sample_string.lower())  # Convert to lowercase
@@ -31,11 +31,11 @@ print("Title Case:", sample_string.title())  # Convert to title case
 print("Reversed String:", sample_string[::-1])  # Reverse the string
 print("Count of 'o':", sample_string.count('o'))  # Count occurrences of 'o'
 print("Index of 'W':", sample_string.index('W'))  # Find index of 'W'
-print("Replace 'Hello' with 'Hi':", sample_string.replace('Hello', 'Hi'))
+print("Replace 'Hello' with 'Hi':", sample_string.replace('Hello', 'Hi')) # Output: HiWorld!!
 # String formatting
 age = 30
 formatted_string = f"My name is {name} and I am {age} years old."
-print("Formatted String:", formatted_string)
+print("Formatted String:", formatted_string) # Output: My name is Harry0123456789 and I am 30 years old.
 # Removing whitespace
 whitespace_string = "   Hello World!   "
 print("Original String with Whitespace:", repr(whitespace_string))
@@ -76,3 +76,37 @@ print(text.isalpha()) # Output: False
 print(text.isdigit()) # Output: False
 print(text.isalnum()) # Output: True
 print(text.isspace()) # Output: False
+
+# String formatting
+name = "Alice"
+age = 30
+formatted_string = f"My name is {name} and I am {age} years old."
+print(formatted_string) # Output: My name is Alice and I am 30 years old.
+
+template = "My name is {} and I am {} years old."
+formatted_string = template.format(name, age)
+print(formatted_string) # Output: My name is Alice and I am 30 years old.
+
+# f Strings are more concise and easier to read compared to the format() method, especially when you have multiple variables to include in the string.
+name = "Bob"    
+age = 25
+formatted_string = f"My name is {name} and I am {age} years old."
+print(formatted_string) # Output: My name is Bob and I am 25 years old
+
+# Character encoding and decoding
+text = "Hello, World!"
+encoded_text = text.encode('utf-8')  # Encode the string to bytes
+print("Encoded Text:", encoded_text)  # Output: b'Hello, World!'
+decoded_text = encoded_text.decode('utf-8')  # Decode the bytes back to a string
+print("Decoded Text:", decoded_text)  # Output: Hello, World!
+
+# ASCII values
+char = 'A'  
+ascii_value = ord(char)  # Get the ASCII value of the character
+print(f"The ASCII value of '{char}' is: {ascii_value}")  # Output: The ASCII value of 'A' is: 65
+ascii_value = 66
+char = chr(ascii_value)  # Get the character corresponding to the ASCII value   
+print(f"The character corresponding to ASCII value {ascii_value} is: '{char}'")  # Output: The character corresponding to ASCII value 66 is: 'B'
+
+
+
