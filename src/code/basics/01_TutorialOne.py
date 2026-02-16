@@ -10,7 +10,7 @@ name = "Alice"  # String
 height = 5.5  # Float
 is_student = True  # Boolean
 # Python is dynamically typed, so you don't need to declare data types explicitly.
-print(f"Name: {name}, Age: {age}, Height: {height}, Is Student: {is_student}")
+print(f"Name: {name}, Age: {age}, Height: {height}, Is Student: {is_student}") # Output: Name: Alice, Age: 25, Height: 5.5, Is Student: True
 # Rules of defining variables in Python:
 # 1. Variable names can contain letters, numbers, and underscores.
 # 2. They cannot start with a number.
@@ -24,7 +24,7 @@ user_age = 30
 user_height = 6.0
 is_active_user = False
 # Printing the variables
-print(f"User Name: {user_name}, User Age: {user_age}, User Height: {user_height}, Is Active User: {is_active_user}")
+print(f"User Name: {user_name}, User Age: {user_age}, User Height: {user_height}, Is Active User: {is_active_user}") # Output: User Name: Bob, User Age: 30, User Height: 6.0, Is Active User: False
 # This script demonstrates basic variable usage and printing in Python.
 # It also includes comments explaining the rules for defining variables.
 # Identify the variable types and print their values.

@@ -14,25 +14,25 @@
 # // -> Floor Division (Quotient)ø
 a = 10
 b = 3
-print("Arithmetic Operators:")
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("Division:", a / b)
-print("Modulus:", a % b)
-print("Exponentiation:", a ** b)
-print("Floor Division:", a // b)
+print("Arithmetic Operators:") # Output: Arithmetic Operators:
+print("Addition:", a + b) # Output: Addition: 13
+print("Subtraction:", a - b)# Output: Subtraction: 7
+print("Multiplication:", a * b) # Output: Multiplication: 30
+print("Division:", a / b)# Output: Division: 3.3333333333333335
+print("Modulus:", a % b)# Output: Modulus: 1
+print("Exponentiation:", a ** b)# Output: Exponentiation: 1000
+print("Floor Division:", a // b)# Output: Floor Division: 3
 # Example of Arithmetic Operators
 a = 34
 b = 2 
 # Arithmetic Operator 
-print("a + b = ", a + b)
-print("a - b = ", a - b)
-print("a * b = ", a * b)
-print("a / b = ", a / b)
-print("a % b = ", a % b)
-print("a // b = ", a // b)
-print("a ** b = ", a ** b)
+print("a + b = ", a + b) # Output: a + b =  36
+print("a - b = ", a - b) # Output: a - b =  32
+print("a * b = ", a * b) # Output: a * b =  68
+print("a / b = ", a / b) # Output: a / b =  17.0
+print("a % b = ", a % b) # Output: a % b =  0
+print("a // b = ", a // b) # Output: a // b =  17
+print("a ** b = ", a ** b) # Output: a ** b =  1156
  
 # Assignment Operators
 # Assignment operators are used to assign values to variables
@@ -44,28 +44,28 @@ print("a ** b = ", a ** b)
 # %= -> Takes the modulus of the left operand by the right operand and assigns the result to the left operand
 # **= -> Raises the left operand to the power of the right operand and assigns the result to the left operand
 # //= -> Performs floor division on the left operand by the right operand and assigns the result to the left operand
-print("\nAssignment Operators:")
+print("\nAssignment Operators:") # Output: Assignment Operators:
 a = 10
-print("Initial value of a:", a)
+print("Initial value of a:", a) # Output: Initial value of a: 10
 a += 5
-print("After += 5, a =", a)
+print("After += 5, a =", a) # Output: After += 5, a = 15
 a -= 3
-print("After -= 3, a =", a)
+print("After -= 3, a =", a) # Output: After -= 3, a = 12
 a *= 2
-print("After *= 2, a =", a)
+print("After *= 2, a =", a) # Output: After *= 2, a = 24
 a /= 4
-print("After /= 4, a =", a)
+print("After /= 4, a =", a) # Output: After /= 4, a = 6.0
 a %= 3
-print("After %= 3, a =", a)
+print("After %= 3, a =", a) # Output: After %= 3, a = 0.0
 a **= 2
-print("After **= 2, a =", a)
+print("After **= 2, a =", a) # Output: After **= 2, a = 0.0
 a //= 3
-print("After //= 3, a =", a)
+print("After //= 3, a =", a) # Output: After //= 3, a = 0.0
 # Example of Assignment Operators
 a = 32
-print(a)
+print(a) # Output: 32
 a*=3
-print(a)
+print(a) # Output: 96
     
 # Comparison Operators
 # Comparison operators are used to compare two values and return a boolean result (True or False)
@@ -75,25 +75,25 @@ print(a)
 # < -> Less than
 # >= -> Greater than or equal to
 # <= -> Less than or equal to
-print("\nComparison Operators:")
+print("\nComparison Operators:") # Output: Comparison Operators:
 # Example of Comparison Operators
 x = 5   
 y = 10
-print("x == y:", x == y)
-print("x != y:", x != y)
-print("x > y:", x > y)
-print("x < y:", x < y)
-print("x >= y:", x >= y)
-print("x <= y:", x <= y)
+print("x == y:", x == y) # Output: x == y: False
+print("x != y:", x != y) # Output: x != y: True
+print("x > y:", x > y) # Output: x > y: False
+print("x < y:", x < y) # Output: x < y: True
+print("x >= y:", x >= y) # Output: x >= y: False
+print("x <= y:", x <= y) # Output: x <= y: True
 # Conditional Operators 
 a = 34
 b = 2
-print(a>4)
-print(a<4)
-print(a<=4)
-print(a>=4)
-print(a==4) # Is a equal to 4?
-print(a==34) # Is a equal to 34?
+print(a>4) # Output: True
+print(a<4) # Output: False
+print(a<=4) # Output: False
+print(a>=4) # Output: True
+print(a==4) # Is a equal to 4? Output: False
+print(a==34) # Is a equal to 34? Output: True
 print(a!=34) # Is a not equal to 34?
 
 # Logical Operators
@@ -106,36 +106,37 @@ print("\nLogical Operators:")
 a = True
 b = False
 print("a and b:", a and b)  # Returns False
-print("a or b:", a or b)
+print("a or b:", a or b) # Returns True
 print("not a:", not a)  # Returns False
 # Example of Logical Operators
 c = True 
 d = False
 
-print(True and True)
-print(True and False)
-print(False and True)
-print(False and False)
+print(True and True) # Output: True
+print(True and False) # Output: False
+print(False and True) # Output: False
+print(False and False) # Output: False
 
-print("For Or Operator...")
-print(True or True)
-print(True or False)
-print(False or True)
-print(False or False)
+print("For Or Operator...") # Output: For Or Operator...
+print(True or True) # Output: True
+print(True or False) # Output: True 
+print(False or True) # Output: True
+print(False or False) # Output: False
 
-print("Not Operator")
-print(not(True) ) 
-print(not(False) ) 
+print("Not Operator") # Output: Not Operator
+print(not(True) ) # Output: False
+print(not(False) ) # Output: True
 
 # Identity Operators
 # Identity operators are used to compare the memory locations of two objects
 # is -> Returns True if both variables point to the same object     
 # is not -> Returns True if both variables do not point to the same object
-print("\nIdentity Operators:")
+print("\nIdentity Operators:") # Output: Identity Operators:
 x = [1, 2, 3]
 y = x
 z = [1, 2, 3]
-print("x is y:", x is y)
+print("x is y:", x is y) # Output: x is y: True, as both x and y point to the same object
+print("x is not y:", x is not y) # Output: x is not y: False, as both x and y point to the same object
 print("x is z:", x is z)  # Returns False, as x and z are different objects
 print("x is not z:", x is not z)  # Returns True, as x and z are different objects
 # Membership Operators
@@ -194,18 +195,20 @@ def count_up_to(n):
 
 print("\nYield Operator:")
 for number in count_up_to(5):
-    print(number)
+    print(number) # Output: 1 2 3 4 5, as the generator yields numbers from 1 to 5
 # This prints numbers from 1 to 5 using a generator function
 # The "del" operator is used to delete variables or objects
 # It can be used to remove items from a list, delete a variable, or delete an entire object 
 print("\nDel Operator:")
 my_list = [1, 2, 3, 4, 5]
-print("Original list:", my_list)
+print("Original list:", my_list) # Output: Original list: [1, 2, 3, 4, 5]
 del my_list[2]  # Deletes the item at index 2
-print("List after deletion:", my_list)      
+print("List after deletion:", my_list) # Output: List after deletion: [1, 2, 4, 5]
+del my_list  # Deletes the entire list    
 # The "pass" operator is used as a placeholder for future code
 # It does nothing and is used when a statement is required syntactically but no action is needed
 print("\nPass Operator:")
 def my_function():
     pass  # This function does nothing
-print("Function defined with pass operator:", my_function)      
+print("Function defined with pass operator:", my_function) # Output: Function defined with pass operator: <function my_function at 0x...>
+# This script demonstrates various types of operators in Python, including arithmetic, assignment, comparison, logical, identity, membership, bitwise, and special operators. Each operator is explained with examples to illustrate its usage and output. You can experiment with these operators further to understand their behavior in different scenarios.    

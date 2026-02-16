@@ -45,11 +45,14 @@ print("Hello", "World", sep=", ", end="!\n")  # This prints a message with a cus
 # Print function is by default gie you a newline character at the end
 # To override this default behavior, we can use the "end" keyword argument
 print("Hello, World!", end="")  # This prints a message without a newline at the end
-print("How are you?")
+print("How are you?") # Output: Hello, World!How are you?
 #  "sep" keyword argument is used to specify the separator between the arguments -> default is a space
-print("Hello", "World", end=" ", sep=" ")  
-print("How are you doing?")
+print("Hello", "World", end=" ", sep=" ")  # Output: Hello World
+print("How are you doing?") # Output: Hello World How are you doing?
 print("Hello World", sep=" _ ")  # This prints a message with a custom separator
-print("How are you doing?")
-print("Hello World", "Is it working?", sep=" _ ")
+print("Hello World", sep=" _ ")  # Output: Hello World
+print("How are you doing?") # Output: Hello World How are you doing?
+print("Hello World", "Is it working?", sep=" _ ") # This prints a message with a custom separator
+print("Hello World", "Is it working?", sep=" _ ") # Output: Hello World _ Is it working?
+print("Hello", 6, 7, sep="~", end="009\n") # Output: Hello~6~7009
 print("Yes, it is working!", end=" :)")  # This prints a message with a custom end character because of the "end" keyword argument
