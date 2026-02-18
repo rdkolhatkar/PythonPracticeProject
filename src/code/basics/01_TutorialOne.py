@@ -9,6 +9,64 @@ age  = 25  # Integer
 name = "Alice"  # String
 height = 5.5  # Float
 is_student = True  # Boolean
+list_of_numbers = [1, 2, 3, 4, 5]  # List
+tuple_of_coordinates = (10.0, 20.0)  # Tuple
+dictionary_of_person = {"name": "Alice", "age": 25, "height": 5.5}  # Dictionary
+# ================================
+# Difference between List, Tuple, and Dictionary in Python
+# ================================
+
+# 1) LIST
+# - Ordered collection of items
+# - Mutable (can be modified after creation)
+# - Allows duplicate values
+# - Defined using square brackets []
+
+my_list = [10, 20, 30, 20]
+
+# List is mutable
+my_list.append(40)        # Adding element
+my_list[0] = 100          # Modifying element
+
+# --------------------------------
+
+# 2) TUPLE
+# - Ordered collection of items
+# - Immutable (cannot be modified after creation)
+# - Allows duplicate values
+# - Defined using parentheses ()
+
+my_tuple = (10, 20, 30, 20)
+
+# Tuple is immutable
+# my_tuple[0] = 100       # ❌ This will raise TypeError
+# my_tuple.append(40)     # ❌ Tuples do not support append()
+
+# --------------------------------
+
+# 3) DICTIONARY
+# - Unordered collection of key-value pairs (insertion order preserved in Python 3.7+)
+# - Mutable
+# - Keys must be unique
+# - Defined using curly braces {key: value}
+
+my_dict = {
+    "name": "Ratnakar",
+    "age": 25,
+    "city": "Mumbai"
+}
+
+# Dictionary is mutable
+my_dict["age"] = 26       # Modifying value
+my_dict["country"] = "India"  # Adding new key-value pair
+
+# --------------------------------
+
+# Quick Summary:
+# List       -> Ordered, Mutable, Allows duplicates         -> [ ]
+# Tuple      -> Ordered, Immutable, Allows duplicates       -> ( )
+# Dictionary -> Key-Value pairs, Mutable, Unique keys      -> { }
+
 # Python is dynamically typed, so you don't need to declare data types explicitly.
 print(f"Name: {name}, Age: {age}, Height: {height}, Is Student: {is_student}") # Output: Name: Alice, Age: 25, Height: 5.5, Is Student: True
 # Rules of defining variables in Python:
@@ -33,5 +91,8 @@ print(type(age))  # <class 'int'>
 print(type(name))  # <class 'str'>
 print(type(height))  # <class 'float'>
 print(type(is_student))  # <class 'bool'>
+print(type(list_of_numbers))  # <class 'list'>
+print(type(tuple_of_coordinates))  # <class 'tuple'>
+print(type(dictionary_of_person))  # <class 'dict'>
 # The script ends here.
 # You can add more functionality or examples as needed.

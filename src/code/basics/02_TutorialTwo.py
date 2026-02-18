@@ -36,3 +36,47 @@ print("The value of i is ", i) # Output: The value of i is 23.0
 print("The type of variable i is ", type(i)) # Output: The type of variable i is <class 'str'>
 # This script demonstrates various typecasting operations in Python.
 # You can add more examples of typecasting as needed.
+# ================================
+# 1) List <-> Tuple Conversion
+# ================================
+
+# List to Tuple
+my_list = [1, 2, 3]
+my_tuple = tuple(my_list)
+print(my_tuple)   # (1, 2, 3)
+
+# Tuple to List
+new_list = list(my_tuple)
+print(new_list)   # [1, 2, 3]
+
+
+# ================================
+# 2) List <-> Dictionary Conversion
+# ================================
+
+# List to Dictionary (Needs key-value pairs)
+pair_list = [("a", 1), ("b", 2), ("c", 3)]
+my_dict = dict(pair_list)
+print(my_dict)   # {'a': 1, 'b': 2, 'c': 3}
+
+# Dictionary to List
+dict_to_list_keys = list(my_dict)          # Only keys
+print(dict_to_list_keys)   # ['a', 'b', 'c']
+
+dict_to_list_items = list(my_dict.items()) # Key-value pairs
+print(dict_to_list_items)  # [('a', 1), ('b', 2), ('c', 3)]
+
+
+# ================================
+# 3) Tuple <-> Dictionary Conversion
+# ================================
+
+# Tuple to Dictionary (must contain key-value pairs)
+pair_tuple = (("x", 10), ("y", 20))
+dict_from_tuple = dict(pair_tuple)
+print(dict_from_tuple)   # {'x': 10, 'y': 20}
+
+# Dictionary to Tuple
+dict_to_tuple = tuple(my_dict.items())
+print(dict_to_tuple)   # (('a', 1), ('b', 2), ('c', 3))
+
