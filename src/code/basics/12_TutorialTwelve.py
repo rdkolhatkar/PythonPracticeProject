@@ -1,4 +1,4 @@
-# To run the the ""TutorialTwelve.py" file use command :  python src/code/basics/12_TutorialTwelve.py
+# To run the "TutorialTwelve.py" file use command :  python src/code/basics/12_TutorialTwelve.py
 # Functions in python
 # Write a function to calculate the Average of Three Numbers
 # Functions are just like methods in Java, it is nothing but a block of reusable code
